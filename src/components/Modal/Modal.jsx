@@ -13,7 +13,7 @@ const Modal = ({ largeImg, handlerCloseModal }) => {
     return () => {
       window.removeEventListener("keydown", handlerEscape);
     }
-  }, [])
+  })
   
   const handlerEscape = (e) => {
     if (e.code === "Escape") {
