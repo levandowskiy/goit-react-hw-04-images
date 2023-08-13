@@ -8,7 +8,7 @@ const ImageGalleryItem = ({ dataItem, handlerOpenModal }) => {
         handlerOpenModal(dataItem.largeImageURL);
       }}
     >
-      <img key={dataItem.id} src={dataItem.webformatURL} alt="" />
+      <img src={dataItem.webformatURL} alt="" />
     </li>
   );
 };

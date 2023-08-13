@@ -24,7 +24,8 @@ const App = () => {
 
   const handlerFormSubmit = (searchValue) => {
     setSearchValue(searchValue);
-    setPage(1);
+    setPage(1);               
+    setSearchResult([])
   };
 
   const fetchImageData = (searchValue, page) => {
@@ -38,7 +39,7 @@ const App = () => {
           setTotalResult(0);
           setErrorMessage('Запит не знайдено');
         } else {
-          setSearchResult((prevResult) => (page === 1 ? searchResult.hits : [...prevResult, ...searchResult.hits]));
+          setSearchResult((prevResult) => ([...prevResult, ...searchResult.hits]));
           setTotalResult(searchResult.totalHits);
         }
       })

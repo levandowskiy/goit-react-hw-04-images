@@ -4,7 +4,7 @@ import './ImageGallery.css';
 import ImageGalleryItem from '../ImageGalleryItem';
 import PropTypes from "prop-types";
 
-const ImageGallery = ({handlerOpenModal, searchResult, totalResult, isLoading, errorMessage, handlerLoadMore}) => {
+const ImageGallery = ({ handlerOpenModal, searchResult, totalResult, isLoading, errorMessage, handlerLoadMore }) => {
 
   return (
     <div className="gallery-wrapper">
